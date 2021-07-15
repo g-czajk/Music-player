@@ -1,32 +1,44 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+  <div class="app">
+    <transition name="route" mode="out-in">
+      <router-view :songsData="songsData" />
+    </transition>
   </div>
 </template>
 
+<script>
+import { songsData } from "./data/songsData";
+
+export default {
+  data() {
+    return {
+      songsData,
+    };
+  },
+};
+</script>
+
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+.app {
+  min-width: 360px;
+  height: 480px;
+  border-radius: 30px;
+  box-shadow: 0px 40px 50px -20px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
 }
 
-#nav {
-  padding: 30px;
+//route animations
 
-  a {
-    font-weight: bold;
-    color: #2c3e50;
+.route-enter-from,
+.route-leave-to {
+  opacity: 0;
+}
 
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+.route-enter-active {
+  transition: 0.1s linear;
+}
+
+.route-leave-active {
+  transition: 0.1s linear;
 }
 </style>

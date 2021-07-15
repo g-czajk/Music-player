@@ -1,24 +1,24 @@
-# music-player
+## Instructions on running locally
 
-## Project setup
+**Clone this repo:**
+
 ```
-npm install
+  git clone https://github.com/g-czajk/Music-player.git
+```
+**Go to the project directory:**
+
+```
+   cd Music-player
+```
+**Install dependencies:**
+
+```
+   npm install
+```
+**Start dev server:**
+
+```
+   npm run start
 ```
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+The widget's UI was designed by <a href="https://dribbble.com/OliaGozha">Olia Gozha</a>. 

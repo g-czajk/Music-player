@@ -18,7 +18,7 @@
 **Start dev server:**
 
 ```
-   npm run start
+   npm run serve
 ```
 
 The widget's UI was designed by <a href="https://dribbble.com/OliaGozha">Olia Gozha</a>. 

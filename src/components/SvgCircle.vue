@@ -8,7 +8,7 @@
       fill="transparent"
       stroke="#d3d5de"
       stroke-width="10"
-      stroke-dasharray="calc(35 * 31.4 / 100) 31.4"
+      stroke-dasharray="11 31.4"
       transform="rotate(-90) translate(-20)"
     />
   </svg>
